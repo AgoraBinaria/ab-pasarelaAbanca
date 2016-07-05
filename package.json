@@ -1,0 +1,32 @@
+{
+  "name": "ab-ftp",
+  "version": "1.2.1",
+  "description": "FTP client wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgoraBinaria/ab-pasarelaAbanca"
+  },
+  "keywords": [
+    "abanca",
+    "ceca",
+    "tpv"
+  ],
+  "author": "Alberto Basalo <albertobasalo@agorabinaria.com> (http://agorabinaria.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AgoraBinaria/ab-pasarelaAbanca/issues"
+  },
+  "homepage": "https://github.com/AgoraBinaria/ab-pasarelaAbanca#readme",
+  "dependencies": {
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
+  }
+}
