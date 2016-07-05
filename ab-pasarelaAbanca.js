@@ -48,20 +48,20 @@ module.exports = class {
         var sign = sha1(this.cyphKey + this.MerchantID + this.AcquirerBIN +
             this.TerminalID + Num_operacion + Importe + this.TipoMoneda +
             this.Exponente + this.Cifrado + urlOk + urlNok);
-        return `<form id="abanca_form" ACTION=" ${this.tpvUrl} " METHOD="POST" ENCTYPE="application/x-www-form-urlencoded">
-            <input name="MerchantID" type="hidden" value=" ${this.MerchantID} ">
-            <input name="AcquirerBIN" type="hidden" value=" ${this.AcquirerBIN} ">
-            <input name="TerminalID" type="hidden" value=" ${this.TerminalID} ">
-            <input name="URL_OK" type="hidden" value=" ${urlOk} ">
-            <input name="URL_NOK" type="hidden" value=" ${urlMok} ">
-            <input name="Firma" type="hidden" value=" ${sign} ">
-            <input name="Cifrado" type="hidden" value=" ${this.Cifrado} ">
-            <input name="Num_operacion" type="hidden" value=" ${Num_operacion} ">
-            <input name="Importe" type="hidden" value=" ${Importe} ">
-            <input name="TipoMoneda" type="hidden" value=" ${this.TipoMoneda} ">
-            <input name="Exponente" type="hidden" value=" ${this.Exponente} ">
-            <input name="Pago_soportado" type="hidden" value=" ${this.Pago_soportado} ">
-            <input name="Idioma" type="hidden" value=" ${this.Idioma} ">
+        return `<form id="abanca_form" ACTION="${this.tpvUrl}" METHOD="POST" ENCTYPE="application/x-www-form-urlencoded">
+            <input name="MerchantID" type="hidden" value="${this.MerchantID}">
+            <input name="AcquirerBIN" type="hidden" value="${this.AcquirerBIN}">
+            <input name="TerminalID" type="hidden" value="${this.TerminalID}">
+            <input name="URL_OK" type="hidden" value="${urlOk}">
+            <input name="URL_NOK" type="hidden" value="${urlMok}">
+            <input name="Firma" type="hidden" value="${sign}">
+            <input name="Cifrado" type="hidden" value="${this.Cifrado}">
+            <input name="Num_operacion" type="hidden" value="${Num_operacion}">
+            <input name="Importe" type="hidden" value="${Importe}">
+            <input name="TipoMoneda" type="hidden" value="${this.TipoMoneda}">
+            <input name="Exponente" type="hidden" value="${this.Exponente}">
+            <input name="Pago_soportado" type="hidden" value="${this.Pago_soportado}">
+            <input name="Idioma" type="hidden" value="${this.Idioma}">
             </form>`
     }
 
