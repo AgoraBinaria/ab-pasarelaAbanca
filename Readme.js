@@ -1,4 +1,9 @@
 /**
+* Importamos el módulo ab-pasarelaAbanca
+*/
+const abAbanca = require('ab-pasarelaAbanca');
+
+/**
  * Crea una instancia de abAbanca con los datos estáticos
  */
 const abanca = new abAbanca(cyphKey, MerchantID, AcquirerBIN, TerminalID, Cifrado, TipoMoneda, Exponente, Pago_soportado, Idioma, tpvUrl);
@@ -14,7 +19,7 @@ let form = abanca.getFormSigned(urlOk, urlNok, Num_operacion, Importe)
 let valid = abanca.isValid(sign, Num_operacion, Importe, Referencia)
 
 /**
- * Devuelve la respuesta de confirmación de pago para enviar a la pasarela 
+ * Devuelve la respuesta de confirmación de pago para enviar a la pasarela
  */
 let responseMessageOk = abanca.getResponseOk(message)
 
